@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo ms-1"> <a href="../home.html">FIT SIDE</a> </div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li class="me-3"><a href="../home.html">Home</a></li>
+        <li class="me-3"><a href="about.html">About</a></li>
+        <li class="services me-3">
+          <a href="programs.html">Programs</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="crossfit.html">Crossfit</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+          </ul>
+
+        </li>
+        <li class="me-3"><a href="membership.html">Membership</a></li>
+        <li class="me-3"><a href="contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section class="container-fluid progbanner d-flex justify-content-center align-items-center p-4 mb-5">
+
+    <div class="text-center">
+      <p class="tekst nas">Choose your program</p>
+      <h1 class="tekst nas mb-5 text-center">Fitness, CrosFit or Yoga. Set your new lifestyle.</h1>
+      <button type="button" class="btnsn" data-bs-toggle="modal" data-bs-target="#exampleModalSn">Start Now!</button>
+    </div>
+    
+  </section>
+
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModalSn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabelSn">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="p-3">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="container">
+      <div>
+        <h5 class="mb-5 fw-bold text-center">If you live near us come to visit our training centers. All programs and all our staff will be at your disposal. It is up to you. Choose program who fits your lifestyle and start the process. You'll get everything you need to start, personal advices, training programs, nutrition and all support you need on the process.</h5>         
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid hoverpr mb-5">
+    <div class="row">
+        <div>
+          <h2 class="text-center fw-bold mb-4">CHOOSE YOUR PROGRAM</h2>
+        </div>
+    </div>        
+     <div class="row d-flex justify-content-evenly">
+      
+      <div class="col-sm-4 fitnesspr tekst d-flex align-items-center justify-content-center">
+        <a href="fitness.html" class="tekst"><h1>FITNESS</h1></a>
+      </div>
+   
+   
+    <div class="col-sm-4 crossfitpr tekst d-flex align-items-center justify-content-center">
+        <a href="crossfit.html" class="tekst"><h1>CROSSFIT</h1></a>
+    </div>
+   
+   
+    <div class="col-sm-4 yogapr tekst d-flex align-items-center justify-content-center">
+        <a href="yoga.html" class="tekst"><h1>YOGA</h1></a>
+    </div>
+       
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5">
+    <div class="container d-flex justify-content-center align-items-center text-center">
+           <div>
+             <h3 class="mb-5 fw-bold">If you not live near us, this should not be an obstacle for you. Sign up and schedule a video meeting with our trainers and they will prepare a training program for you and monitor your progress in detail through daily communication.</h3>
+           </div>     
+    </div>
+ </div>
+
+ <div class="container-fluid abussubscribe d-flex align-items-center justify-content-evenly text-center">
+   <div>
+     <h1 class="fw-bold fst-italic">Join Fit Side online and get your trial period!</h1>
+   </div> 
+   <div>
+     <button type="button" class="btnsu ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN UP</button>
+  </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="p-3">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer p-5">
+    <div class="row d-flex justify-content-center ">
+      <div class="col-sm-4 ">
+        <h1 class="logo">FIT SIDE</h1>
+      </div>
+      <div class="col-sm-4 text-center">
+        <h6 class="mb-5">Personal advices, training programs, nutrition and all support you need on the process.</h6>
+        <div class="text-center">
+        <p>Folow us on social media:</p>
+        <div class="ms-4 mb-4">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+        <a href=""><i class="bi bi-youtube"></i></a>
+       </div>
+       </div>
+      </div>
+      <div class="col-sm-4">
+        <h5 class="fw-bold text-center">Get in touch</h5>
+        <div class="text-start d-flex justify-content-center mb-5 ms-4">
+          <a href="" class="me-4">Email</a>
+          <a href="" class="me-4">Sign Up</a>
+          <a href="" class="me-4">Subscribe</a>
+        </div>
+        <div class="mb-5 text-center">
+          <h5 class="ms-4 text-center fw-bold mb-3">Menu</h5>
+         <ul class="">
+          <li class="mb-3"><a href="../home.html">Home</a></li>
+          <li class="mb-3"><a href="about.html">About</a></li>
+          <li class="mb-3"><a href="membership.html">Membership</a></li>
+          <li class="mb-3"><a href="programs.html">Programs</a></li>
+          <li class="mb-3"><a href="contact.html">Contact</a></li>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="text-center">
+      <p>Copiright 2023</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script src="../jquery.js"></script>
+</body>
+</html>

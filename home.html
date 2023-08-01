@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo ms-1"> <a href="home.html">FIT SIDE</a> </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li class="me-3"><a href="home.html">Home</a></li>
+        <li class="me-3"><a href="Pages/about.html">About</a></li>
+        <li class="services me-3">
+          <a href="Pages/programs.html">Programs</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="Pages/fitness.html">Fitness</a></li>
+            <li><a href="Pages/crossfit.html">Crossfit</a></li>
+            <li><a href="Pages/yoga.html">Yoga</a></li>
+          </ul>
+
+        </li>
+        <li class="me-3"><a href="Pages/membership.html">Membership</a></li>
+        <li class="me-3"><a href="Pages/contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+ 
+ 
+
+  
+
+<section class="container-fluid banner1 d-flex justify-content-center align-items-center p-4 mb-3">
+
+  <div class="text-center">
+    <h1 class="tekst nas mb-5">"NO ONE REGRETS BEING FIT"</h1>
+    <button type="button" class="btnsn" data-bs-toggle="modal" data-bs-target="#exampleModalSn">Start Now!</button>
+  </div>
+  
+</section>
+
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModalSn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabelSn">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="p-3">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="container mb-5 p-5">
+
+  <div class="row d-flex justify-content-center text-center">
+     <h1 class="fw-bold">Strength training, boxing, yoga, spin, cross country running and more. We're not picky as long as it gets you moving and sweating.</h1>
+  </div>
+
+</div>
+
+
+<div class="container services1 mb-5 p-5">
+  <h1 class="text-center">Online Services</h1>
+ <div class="row mb-5 text-center mt-5">
+   
+    <div class="col-sm-6">
+     <h1>Personal Training</h1>
+     <p>Individual and small group sessions that are designed to work every major muscle group, plus cardio training.</p>
+    </div>
+
+    <div class="col-sm-6">
+     <h1>Nutrition</h1>
+     <p>Exercise is only one facet of a healthy lifestyle. I’ll help you make good choices when you eat so you can have more energy throughout the day.</p>
+    </div>
+
+  </div>
+
+  <div class="row mb-5 text-center mb-5">
+    <div class="col-sm-6">
+     <h1>Physical Health</h1>
+     <p>Whether you’re suffering from chronic condition or just looking to achieve peak performance, I can point you to experts who can help.</p>
+    </div>
+    <div class="col-sm-6">
+     <h1>Customized Plans</h1>
+     <p>Sometimes all you need is the instruction manual. Let me design a total fitness plan that will help you reach your goals.</p>
+    </div>
+  </div>
+  <div class="text-center">
+    <button type="button" class="btnsu" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="p-3">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 class="text-center fw-bold">Facilities</h1>
+
+<div class="container p-5 mb-5">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="Images/facilities1.jpg" class="d-inline-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="tekst">Fitness Section</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/facilities2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="tekst">Fitness Section</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="Images/facilities4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="tekst">Pool and Spa</h1>
+          </div>
+      </div>  
+        <div class="carousel-item">
+            <img src="Images/facilities5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="tekst">CrossFit Section</h1>
+            </div>
+        </div> 
+        <div class="carousel-item">
+          <img src="Images/facilities6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="tekst">Sauna</h1>
+          </div>
+       </div>
+       <div class="carousel-item">
+        <img src="Images/facilities7.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="tekst">CrossFit Section</h1>
+          </div>
+       </div> 
+      <div class="carousel-item">
+        <img src="Images/facilities8.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="tekst">Outdoor Yoga</h1>
+          </div>
+      </div>
+     <div class="carousel-item">
+      <img src="Images/facilities9.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="tekst">Yoga Section Indoor</h1>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next fs-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon fs-5" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</div>
+
+  
+<div class="container-fluid banner2 mb-5 d-flex justify-content-center align-items-center text-center">
+  <div>
+    <h4 class="mb-5">INTERESTED?</h4>
+    <h1 class="mb-5">Get in touch.Start your trial period.</h1>
+    <a href="Pages/programs.html"> <button type="button" class="btnsu mt-5">Let's do this</button></a>
+  </div>
+</div>
+  
+
+  
+<div class="container-fluid subscribe d-flex align-items-center justify-content-center text-center">
+  <div>
+    <h1 class="fs-3">Weekly Tips Straight to Your Inbox</h1>
+    <h6 class="mb-5">Sign up with your email address to receive news and updates.</h6>
+  <div>
+    <input type="email" placeholder="Email Adress">
+    <button type="button" class="btnsu ms-1">Subscribe</button>
+    </div>
+    <p class="mt-5">We respect your privacy</p>
+  </div> 
+</div>
+   
+  
+<div class="container-fluid footer p-5">
+  <div class="row d-flex justify-content-between">
+    <div class="col-sm-4 ">
+      <h1 class="logo">FIT SIDE</h1>
+    </div>
+    <div class="col-sm-4 text-center">
+      <h6 class="mb-5">Personal advices, training programs, nutrition and all support you need on the process.</h6>
+      <div class="text-center">
+      <p>Folow us on social media:</p>
+      <div class="ms-4 mb-4">
+      <a href=""><i class="bi bi-facebook"></i></a>
+      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href=""><i class="bi bi-tiktok"></i></a>
+      <a href=""><i class="bi bi-youtube"></i></a>
+     </div>
+     </div>
+    </div>
+    <div class="col-sm-4">
+      <h5 class="fw-bold text-center">Get in touch</h5>
+       <div class="d-flex justify-content-center mb-5 ms-4">
+        <a href="" class="me-4">Email</a>
+        <a href="" class="me-4">Sign Up</a>
+        <a href="" class="me-4">Subscribe</a>
+      </div>
+      <div class="mb-5 text-center">
+        <h5 class="ms-4 text-center fw-bold mb-3">Menu:</h5>
+       <ul class="">
+        <li class="mb-3"><a href="home.html">Home</a></li>
+        <li class="mb-3"><a href="Pages/about.html">About</a></li>
+        <li class="mb-3"><a href="Pages/membership.html">Membership</a></li>
+        <li class="mb-3"><a href="Pages/programs.html">Programs</a></li>
+        <li class="mb-3"><a href="Pages/contact.html">Contact</a></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="text-center">
+    <p>Copiright 2023</p>
+  </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script src="jquery.js"></script>
+
+</body>
+</html>

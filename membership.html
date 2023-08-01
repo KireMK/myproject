@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo ms-1"> <a href="../home.html">FIT SIDE</a> </div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li class="me-3"><a href="../home.html">Home</a></li>
+        <li class="me-3"><a href="about.html">About</a></li>
+        <li class="services me-3">
+          <a href="programs.html">Programs</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="crossfit.html">Crossfit</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+          </ul>
+
+        </li>
+        <li class="me-3"><a href="membership.html">Membership</a></li>
+        <li class="me-3"><a href="contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+ 
+ 
+
+   <section class="container-fluid membanner d-flex justify-content-center align-items-center mb-5">
+       <div class="text-center">
+        <h1 class="tekst nas">Are you ready to start?</h1>
+        <p class="tekst nas">Become our member and get full access to our facilities</p>
+        <button type="button" class="btnsn mt-4" data-bs-toggle="modal" data-bs-target="#exampleModalSn">Start Now!</button>
+       </div>
+   </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalSn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabelSn">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="p-3">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="text-center mb-5 ">
+      <button type="button" class="membtn shadow-lg">Click to see Memberships</button>
+    </div>
+
+   <div class="container-fluid d-flex justify-content-evenly align-items-center mb-5">
+    <div class="row">
+        <div class="col-sm-4 p-3">
+          <div class="card card1 p-3 shadow-lg bg-dark text-white">
+            <img src="../Images/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title mb-3 text-primary memtext">Start Membership</h5>
+              <h3 class="mb-3 text-success memtext">150$ Month</h3>
+              <p class="card-text par">If you are new in fitness and this module is just for you. If you are new to training and need guidance and additional training tips this package is for you. Train 3 times a week and have full access to all our content if you need it. In addition, you get a training program prepared by our trainers, you also get a complete nutrition plan.</p>
+              <a href="#" class="btn btn-secondary">Start Today</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-3">
+          <div class="card card2 p-3 shadow-lg bg-dark text-white">
+            <img src="../Images/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title mb-3 text-warning memtext">Active Membership</h5>
+              <h3 class="mb-3 text-success memtext">200$ Month</h3>
+              <p class="card-text par">If you are already training and want to take your training to a higher level, this membership fee is just for you. With this membership fee you get full access to all our sections 5 times a week. You also get a prepared program that is a combination of crossfit and fitness as well as a complete nutrition plan and tracking your progress.</p>
+              <a href="#" class="btn btn-secondary">Start Today</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-3">
+          <div class="card card3 p-3 shadow-lg bg-dark text-white">
+            <img src="../Images/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title mb-3 text-danger memtext">Pro Membership</h5>
+              <h3 class="mb-3 text-success memtext">300$ Month</h3>
+              <p class="card-text par">If you have already reached a certain higher level in your training, we appreciate your professionalism. We offer you all available resources of equipment and knowledge as well as 24/7 support from our physio center that will monitor your form. You get the opportunity to get a diet plan that our nutritionists will prepare especially for you.</p>
+              <a href="#" class="btn btn-secondary">Start Today</a>
+            </div>
+          </div>
+        </div>
+    </div>
+   </div>
+
+
+
+
+   <div class="container-fluid abussubscribe d-flex align-items-center justify-content-evenly text-center">
+    <div>
+      <h1 class="fst-italic">Ready to try a Fit SIde workout?</h1>
+    </div> 
+    <div>
+      <button type="button" class="btnsu ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Start Your Trial </button>
+   </div>
+   </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="p-3">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid footer p-5">
+    <div class="row d-flex justify-content-center ">
+      <div class="col-sm-4 ">
+        <h1 class="logo">FIT SIDE</h1>
+      </div>
+      <div class="col-sm-4 text-center">
+        <h6 class="mb-5">Personal advices, training programs, nutrition and all support you need on the process.</h6>
+        <div class="text-center">
+        <p>Folow us on social media:</p>
+        <div class="ms-4 mb-4">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+        <a href=""><i class="bi bi-youtube"></i></a>
+       </div>
+       </div>
+      </div>
+      <div class="col-sm-4">
+        <h5 class="fw-bold text-center">Get in touch</h5>
+        <div class="text-start d-flex justify-content-center mb-5 ms-4">
+          <a href="" class="me-4">Email</a>
+          <a href="" class="me-4">Sign Up</a>
+          <a href="" class="me-4">Subscribe</a>
+        </div>
+        <div class="mb-5 text-center">
+          <h5 class="ms-4 fw-bold mb-3">Menu</h5>
+         <ul class="">
+          <li class="mb-3"><a href="../home.html">Home</a></li>
+          <li class="mb-3"><a href="about.html">About</a></li>
+          <li class="mb-3"><a href="membership.html">Membership</a></li>
+          <li class="mb-3"><a href="programs.html">Programs</a></li>
+          <li class="mb-3"><a href="contact.html">Contact</a></li>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="text-center">
+      <p>Copiright 2023</p>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script src="../jquery.js"></script>
+</body>
+</html>

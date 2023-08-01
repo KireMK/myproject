@@ -1,0 +1,555 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@600&family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Flex:wght@600&family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poiret+One&family=Roboto+Flex:wght@600&family=Rokkitt:wght@300&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@500&family=Poiret+One&family=Raleway:wght@700&family=Roboto+Flex:wght@600&family=Rokkitt:wght@300&family=Varela&display=swap');
+
+@font-face {
+  font-family: myFont;
+  src: url('Hey\ August.ttf');
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(45,77,68,255);
+/* background-color: rgba(216,223,215,255);*/
+ 
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin-left: 0;
+}
+
+.textju{
+  text-align: justify;
+}
+
+.navbar {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 60px;
+  background-color: rgb(27, 4, 50);
+  color: white;
+  border-bottom: 1px solid whitesmoke;
+ 
+  /*background: rgba(216,223,215,255);
+  color: rgba(45,77,68,255);*/
+  
+}
+
+.nav-links a {
+  /*color: rgba(45,77,68,255);*/
+  color: white;
+  line-height: 50%;
+  text-transform: uppercase;
+  font-weight:900;
+}
+
+
+/* LOGO */
+nav .logo {
+  font-family: myfont;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  height: 50px;
+  float: left;
+  font-size: 50px;
+  font-style: italic;
+  text-transform: uppercase;
+ /* color: rgba(45,77,68,255);*/
+  color: white;
+  line-height: 47px;
+}
+.logo{
+  font-family: myfont;
+  letter-spacing: 5px;
+  font-size: 80px;
+  font-style: italic;
+}
+
+.logo a{
+ /*color: rgba(45,77,68,255);*/
+ color: white;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;  
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid  white;
+  padding-bottom: 7px;
+}
+
+.menu li {
+  padding: 5px 10px;
+}
+
+/* DROPDOWN MENU */
+.services {
+ position: relative;
+}
+
+.dropdown {
+  /*background: rgba(216,223,215,255);*/
+  background-color:rgb(24, 7, 50);
+  margin-top: 6px;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  width: 120px;
+}
+
+.dropdown li + li {
+  margin-top: 15px;
+}
+
+.dropdown li {
+  padding: 5px 12px;
+  width: 50%;
+  text-align: left;
+}
+.dropdown li a{
+  text-transform: none;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 860px) {
+  
+  .menu {
+     display:none;
+     position: absolute;
+     background: rgba(24,7,50);
+     right: 0;
+     left: 0;
+     top:59px;
+     text-align: center;
+     padding: 16px 0;
+   }
+ 
+   .menu li:hover {
+    display: inline-block;
+    background: rgba(24,7,50);
+    transition: 0.3s ease;
+   }
+ 
+   .menu li + li {
+     margin-top: 12px;
+   }
+ 
+   input[type=checkbox]:checked ~ .menu {
+     display: block;
+   }
+ 
+   .hamburger {
+     margin-right: 10px;
+     display: block;
+     font-size: 25px;
+   }
+ 
+   .dropdown {
+     left: 60%;
+     top: -20px;
+     transform: translateX(35%);  
+   }
+ 
+   nav .logo{
+    font-size: 27px;
+    line-height: 38px;
+    height: 48px;
+   }
+   .footer .logo{
+    font-size: 50px;
+    text-align: center;
+   }
+   h5{
+    text-align: center;
+   }
+   .subscribe input {
+    padding: 10px 0px;
+  }
+ 
+  .subscribe .mt-5{
+     margin-top: 1rem!important;
+  }
+  .btnsu{
+    font-size: 10px;
+    padding: 10px 50px;
+  }
+  .abusbanner1{
+    height: 44vh!important;
+   }
+
+ }
+
+ @media(max-width: 500px){
+   section h5{
+    text-align: center;
+   } 
+  .subscribe input {
+    padding: 5px 0px!important;
+   }
+   .btnsu {
+    font-size: 12px!important;
+    padding: 8px 38px!important;
+   }
+   .footer .logo{
+    text-align: center;
+   }
+   .col-sm-4{
+   margin-bottom: 20px;
+   text-align: center;
+   }
+   .abusbanner1{
+    height: 44vh;
+   }
+  }
+ 
+
+.banner1{
+  max-width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.508)),url('Images/programs1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position:center;
+  background-size: cover;
+}
+
+/*display: none; for hover effect in jQuery */
+.nas{
+  display: none;
+}
+.btnsn{
+  display: none;
+}
+
+.tekst{
+  color:rgb(255, 255, 255); 
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.btnsn{
+  background: none;
+  padding: 15px 50px;
+  color: white;
+  border: white 1px solid;
+  font-weight: bold;
+}
+
+.btnsn:hover{
+  background: white;
+  color: rgb(0, 0, 0);
+}
+
+  /*services*/
+
+.services1{
+  width: 100%;
+  background-image: url('Images/services1.jpeg');
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; 
+}
+
+.services1 h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.services p {
+  font-size: 15px;
+}
+
+.btnsu{
+  background: none;
+  padding: 15px 80px;
+  color: white;
+  border: white 1px solid;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.btnsu:hover {
+  background: white;
+  color:rgba(45,77,68,255);
+}
+
+/*Banner 2*/
+
+.banner2 {
+  width: 100%;
+  height: 70vh;
+  background-image: url('Images/banner2.jpg');
+  color: white;
+}
+
+/*Carousel Slider*/
+
+
+
+/*Subscribe*/
+
+.subscribe{
+  max-width: 100%;
+  height: 50vh;
+  background-color: rgb(59, 101, 101); 
+  color: white;
+}
+
+.subscribe input{
+  padding: 15px 50px;
+}
+
+
+/*Footer*/
+  
+.footer i {
+  font-size: 25px;
+  letter-spacing:30px;
+  color: rgba(45,77,68,255);
+}
+
+.footer { 
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: rgba(45,77,68,255);
+}
+
+.footer a {
+  color: rgba(45,77,68,255);
+  font-size: 15px;
+}
+
+
+/*About Us*/
+
+.abusbanner{
+  max-width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.508)),url('Images/shtanga-sportzal-sport-114266.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.abusbanner1{
+  max-width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.232),rgba(0, 0, 0, 0.308)),url('Images/with-pancake-rod-hand-gorgeous-blonde-woman-gym-her-weekend-time.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+ .abusicons i {
+  font-size: 85px;
+ }
+
+ .abussubscribe {
+    max-width: 100%;
+    height: 40vh;
+    background-color: rgb(59, 101, 101); 
+    color: white;
+ }
+
+ .par{
+  text-align: justify;
+  word-spacing: 2px;
+ }
+
+ /* Membership page*/
+
+ .membanner{
+  max-width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.508)),url('Images/membership1.avif');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+}
+/*Programs page*/
+
+.progbanner{
+  max-width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.588),rgba(0, 0, 0, 0.615)),url('Images/home3.avif');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position:center;
+  background-size: cover;
+}
+
+/*Membership page*/
+
+.membtn{
+  background: rgba(45,77,68,255);
+  padding: 15px 50px;
+ color: white;
+  border: rgba(45,77,68,255) 1px solid;
+  font-weight: bold;
+}
+.membtn:active{
+  background:  white;
+  color:rgba(45,77,68,255) ;
+}
+.memtext{
+  font-family: myFont;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+
+/*Membership page display none*/
+.card{
+  opacity: 0.9;
+  display: none;
+}
+
+.card:hover{
+ opacity: 1;
+}
+
+/*Programs Page*/
+
+.fitnesspr {
+  max-width: 100%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.508)),url('Images/fitnesspr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+.fitnesspr:hover{
+  opacity: 1;
+ }
+
+.fitnesspr a:hover{
+  border-bottom: 2px solid white;
+}
+.fitnesspr a{
+  display: none;
+}
+
+.crossfitpr{
+  max-width: 100%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.489),rgba(0, 0, 0, 0.03)),url('Images/crossfit1.webp');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+.crossfitpr:hover{
+  opacity: 1;
+ }
+
+.crossfitpr a:hover{
+  border-bottom: 2px solid white;
+}
+.crossfitpr a{
+  display: none;
+}
+
+
+.yogapr{
+  max-width: 100%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.486),rgba(0, 0, 0, 0.481)),url('Images/yogapr.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+ .yogapr:hover{
+  opacity: 1;
+ }
+
+.yogapr a:hover{
+  border-bottom: 2px solid white; 
+}
+.yogapr a{
+  display: none;
+}
+
+/*Contact Page*/
+
+.cusbanner{
+  color: black;
+  max-width: 100%;
+  height: 25vh;
+ /* background-image: linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.508)),url('Images/fitness3.webp');*/
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position:center;
+  background-size: cover;
+}
+
+.btnsm{
+  padding: 10px 40px;
+  background-color: rgb(45,77,68,255);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+.btnsm:hover{
+  background-color:white;
+  color:rgb(45,77,68,255);
+}
+
+form {
+  background-color: none;
+  border: 2px solid  rgb(45,77,68,255);
+}
